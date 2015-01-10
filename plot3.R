@@ -10,7 +10,7 @@ plot(data$datetime, data$Sub_metering_1, type="n", ylab="Energy sub metering", x
 lines(data$datetime, data$Sub_metering_1, type="l", col="black", ylab="Energy sub metering" )
 lines(data$datetime, data$Sub_metering_2, type="l", col="red", ylab="Energy sub metering")
 lines(data$datetime, data$Sub_metering_3, type="l", col="blue", ylab="Energy sub metering")
-legend("topright", lty=1, col=c("black", "red", "blue"), legend=c("Sub_metering_1", "Sub_metering_2","Sub_metering_3"))
+legend("topright", cex=0.9, lty=1, col=c("black", "red", "blue"), legend=c("Sub_metering_1", "Sub_metering_2","Sub_metering_3"))
 
 dev.copy(png, file= "plot3.png") #copy plot to png
 dev.off() #close png device

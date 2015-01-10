@@ -21,7 +21,6 @@ legend("topright", cex=0.9, lty=1, col=c("black", "red", "blue"), legend=c("Sub_
 
 #4
 plot(data$datetime, data$Global_reactive_power, type="l", ylab="Global_reactive_power", xlab="datetime")
-
-dev.copy(png, file= "plot4.png") #copy plot to png
+?png
+dev.copy(png,pointsize = 9 , file= "plot4.png") #copy plot to png
 dev.off() #close png device
-?plot 
